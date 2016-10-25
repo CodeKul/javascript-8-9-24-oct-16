@@ -7,65 +7,6 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-      <div>
-          <ul id="ulTechs">
-          </ul>
-      </div>
-      <div>
-        <input type="button" value="Add" onclick="addItJq()"/>
-      </div>
-      <div>
-        <input type="text" id="textPos" onkeyup="checkIt()"/>
-      </div>
-      <div >
-        <h4 id="hSts">Tap Add to add new technology</h4>
-      </div>
-
-    <script type="text/javascript">
-      var techs = ['Android','iOS','Rim','Windows','Plam','Chromium'];
-
-      function addIt() {
-        var ul = document.getElementById('ulTechs');
-        var li = document.createElement('li');
-        var pos = postion();
-        li.innerHTML = techs[pos];
-        ul.append(li);
-      };
-
-      function postion() {
-        var random = Math.random();
-        var prePos = random * 6;
-        var pos = parseInt(prePos);
-
-        console.log('Random - '+random + ' Pre pos - '+prePos + ' Pos - '+pos);
-        return pos;
-      }
-
-      function addItJq(){
-        var pos = postion();
-        if(checkIt())
-          $('#ulTechs').append('<li>'+techs[pos]+'</li>');
-      }
-
-      function checkIt(){
-        var sts = false;
-        var text = $('#textPos').val();
-          console.log('Text is - '+text);
-        var num = parseInt(text);
-
-        if(num > 6 || num < 0 ) {
-          $('#hSts').html('InValid position');
-          sts = false;
-        }
-        else {
-          $('#hSts').html('Valid position');
-          sts = true;
-        }
-        return sts;
-      }
-    </script>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <h1>Hello</h1>
     </body>
 </html>

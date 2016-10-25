@@ -28,7 +28,7 @@ function lg(msg){
 }
 
 function operationVer2(op, num1, num2) {
-  var result = 0;
+  vanr result = 0;
 
   if(op === '+') result = num1 + num2;
   if(op === '-') result = num1 - num2;
