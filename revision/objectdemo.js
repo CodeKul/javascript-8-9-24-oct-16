@@ -19,6 +19,4 @@ var objectDemo = (function (modDwln) {
     modDwln.dwln('myObj[name] = '+myObj[name]);
     modDwln.dwln('myObj.name = '+myObj.name);
     modDwln.dwln('myObj[1] = '+myObj[1]);
-
-
 })(modDwln);
