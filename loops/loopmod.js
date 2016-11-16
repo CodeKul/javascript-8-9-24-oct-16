@@ -24,7 +24,7 @@ var loopModule = (function(printer){
         return x*x + y*y;
     }
 
-    var result = (x,y) => x*x + y*y;
+    var result = (x,y) => x*x + y*y; // fat arrows
     printer.print('Result - '+result(10,10));
     printer.print('My - '+my(10,10));
 
@@ -38,7 +38,7 @@ var loopModule = (function(printer){
         name : 'Audi',
         price : 10,
         city : 'Mumbai',
-        calc : (x,y) => x*x + y*y 
+        calc : (x,y) => x*x + y*y  // fat arrows
     };
 
     for (var key in cars){
