@@ -26,3 +26,7 @@ var domModule = (function (doc, printer) {
     return retObj;
 
 })(document, printerModule);
+
+function hello (){
+    console.log('Hi');
+}
