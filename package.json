@@ -3,7 +3,7 @@
    "version": "1.0.0",
    "description": "demo project.",
    "scripts": {
-     "lite": "lite-server -s --baseDir ./loops –port 10001",
+     "lite": "lite-server -s --baseDir ./dom-manipulation –port 10001",
      "start": "npm run lite"
    },
    "author": "",
