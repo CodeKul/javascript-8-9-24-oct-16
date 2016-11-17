@@ -9,15 +9,24 @@
 </head>
 
 <body>
-
 	<div>
 		<input type="text" id="textName" />
 		<input type="button" id="btnOkay" />
 	</div>
 
-	<script src="dom.js">
+    <div>
+		<input type="text" id="textOs" onkeyup="domModule.keyGotItAgain(this,divOs)"/>
+        <div id="divOs"> Printing </div>
+	</div>
+
+    <div>
+		<input type="text" id="textMobile" />
+        <div id="divMobile"> Printing </div>
+	</div>
+
+    <script src="printer.js">
     </script>
-	<script src="printer.js">
+	<script src="dom.js">
     </script>
 	<script src="app.js">
     </script>
