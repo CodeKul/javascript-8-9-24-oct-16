@@ -6,6 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/style.css" rel="stylesheet">
+
+	
 </head>
 
 <body>
@@ -15,7 +17,7 @@
 	</div>
 
     <div>
-		<input type="text" id="textOs" onkeyup="hello()"/>
+		<input type="text" id="textOs" onkeyup="domModule.keyGotItAgain(this,divOs)"/>
         <div id="divOs"> Printing </div>
 	</div>
 
@@ -24,12 +26,17 @@
         <div id="divMobile"> Printing </div>
 	</div>
 
-    <script src="printer.js">
+
+	<script src="query.js">
+    </script>
+	<script src="printer.js">
     </script>
 	<script src="dom.js">
     </script>
 	<script src="app.js">
-    </script>
+    </script> 
+	<script src="advancedom.js">
+    </script>   
 </body>
 
 </html>
