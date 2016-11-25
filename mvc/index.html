@@ -5,7 +5,7 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="my.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,9 +16,26 @@
     <div>
         <input type="button" id="btnOkay" />
     </div>
-    <div id="divResult"> 
+    <div id="divResult">
     </div>
-    
+
+    <div id="card">
+        <div>
+            Front content
+        </div>
+        <div>
+            Back content
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script>
+        $(function($) {
+            $("#card").flip(); 
+        });
+    </script>
+
     <script src="model.js">
     </script>
     <script src="service.js">

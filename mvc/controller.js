@@ -1,3 +1,10 @@
 var controller = ((doc, model, jokes) => {
-    model.btnOkay('hi how are you' + jokes.crackRandomJoke());
+
+    model.clickBtnOkay(() => {
+        jokes.crackRandomJoke((joke) => {
+            model.crackJoke(joke);
+        });
+        
+    });
+
 })(document, model, jokesProvider);
